@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title BaseTemplate
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+
+    = render 'layouts/navbar'
+    .alert-info= notice
+    .alert-warning= alert
+
+.row
+  .col-md-2#sidebar
+    This is the sidebar, k?
+  .col-md-10#main-panel
+    = yield
+
+= render 'layouts/footer'
