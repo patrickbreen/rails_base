@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#blorgh engine
+gem 'blorgh', path: "vendor/engines/blorgh"
 
 #new gems
 gem 'bootstrap-sass', '~> 3.3.3'

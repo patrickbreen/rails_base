@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#home'
+  root 'welcome#home'
+
+  #blorgh
+  mount Blorgh::Engine, at: "/blog"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
